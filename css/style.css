@@ -62,6 +62,7 @@ body {
 
 .header-slogan-text span {
     color: #1a3b90;
+    font-family: "Yuanti SC", "STYuanti-SC", "华文圆体", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .header-slogan-text span:first-child {
@@ -318,6 +319,7 @@ body {
 
 .footer-slogan span {
     color: #ffffff;
+    font-family: "Yuanti SC", "STYuanti-SC", "华文圆体", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
 }
 
 .footer-slogan span:first-child {
@@ -384,4 +386,11 @@ body {
         font-size: 14px;
         padding: 6px 14px;
     }
+}
+
+/* 大标语高亮：亮青蓝色 */
+.text-highlight {
+    color: #22d3ee;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
