@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- 顶部导航栏（和主站视觉统一） -->
+    <!-- 顶部导航：和主站完全一致 -->
     <header class="site-header">
         <div class="container nav-container">
-            <a href="https://www.genuineknowledge.cn/" class="logo-link">
-                <img src="./images/logo-full.png" alt="真知智能" class="logo-full">
-                <div class="logo-slogan header-slogan">
+            <div class="header-left">
+                <a href="https://www.genuineknowledge.cn/" class="logo-link">
+                    <img src="./images/logo-full.png" alt="真知智能" class="logo-full">
+                </a>
+                <div class="header-slogan-text">
                     <span>符号连接融合</span>
                     <span>大模型与智能体</span>
                 </div>
-            </a>
+            </div>
 
             <nav class="main-nav">
-                
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="https://www.genuineknowledge.cn/products/?product" class="nav-product-btn">我们的产品</a>
+                        <div class="dropdown-menu">
+                            <a href="https://www.genuineknowledge.cn/products/?product=1" class="dropdown-item">HaiTun Agent</a>
+                            <a href="https://www.genuineknowledge.cn/products/?product=2" class="dropdown-item">HaiBao Data</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.genuineknowledge.cn/about/" class="nav-link">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.genuineknowledge.cn/join-us/" class="nav-link">加入我们</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -37,7 +53,6 @@
         <div class="container">
             <h2 class="section-title">热招岗位</h2>
             <div class="job-list">
-                <!-- 岗位1：编程实习生 -->
                 <div class="job-card">
                     <h3 class="job-name">编程实习生</h3>
                     <p class="job-desc">负责公司官网及产品前端开发，参与交互设计与性能优化，打造极致的用户体验。</p>
@@ -54,7 +69,6 @@
                     </div>
                 </div>
 
-                <!-- 岗位2：AI算法工程师 -->
                 <div class="job-card">
                     <h3 class="job-name">AI算法工程师</h3>
                     <p class="job-desc">负责智能体相关算法研发，探索大模型应用与落地场景，推动产品核心能力迭代。</p>
@@ -74,12 +88,12 @@
         </div>
     </section>
 
-    <!-- 页脚：和主站视觉完全统一 -->
+    <!-- 页脚：和主站完全一致 -->
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-brand">
                 <img src="./images/logo-full.png" alt="真知智能" class="footer-logo">
-                <div class="logo-slogan footer-slogan">
+                <div class="footer-slogan">
                     <span>符号连接融合</span>
                     <span>大模型与智能体</span>
                 </div>

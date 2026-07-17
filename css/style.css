@@ -25,7 +25,6 @@ body {
     height: 80px;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(16px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     z-index: 1000;
 }
 
@@ -36,28 +35,44 @@ body {
     height: 100%;
 }
 
-/* Logo + Slogan 美化 */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .logo-link {
     display: flex;
     align-items: center;
-    gap: 14px;
     text-decoration: none;
 }
+
 .logo-full {
     height: 44px;
     width: auto;
 }
-.logo-slogan {
+
+.header-slogan-text {
     display: flex;
     flex-direction: column;
-    line-height: 1.4;
-    letter-spacing: 0.3px;
+    line-height: 1.35;
+    pointer-events: none;
+    user-select: none;
 }
-/* 顶部 Slogan：深灰蓝，纤细精致，和白底适配 */
-.header-slogan {
-    color: #233870;
+
+.header-slogan-text span {
+    color: #1a3b90;
+}
+
+.header-slogan-text span:first-child {
     font-size: 13px;
+    font-weight: 600;
+}
+
+.header-slogan-text span:last-child {
+    font-size: 12px;
     font-weight: 500;
+    opacity: 0.85;
 }
 
 /* 导航菜单 */
@@ -67,64 +82,82 @@ body {
     gap: 48px;
     align-items: center;
 }
+
 .nav-link {
     color: #0f172a;
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
+
 .nav-link:hover {
     color: #1a3b90;
 }
 
-/* 产品下拉菜单：按钮样式 */
+/* 产品下拉按钮：默认白底，hover 蓝底白字 */
 .dropdown {
     position: relative;
 }
+
+.nav-product-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.nav-product-btn:hover {
+    background: #1a3b90;
+    color: #ffffff;
+    border-color: #1a3b90;
+}
+
 .dropdown-menu {
     position: absolute;
-    top: calc(100% + 12px);
-    left: 50%;
-    transform: translateX(-50%) translateY(8px);
+    top: calc(100% + 8px);
+    left: 0;
     min-width: 200px;
-    background: #ffffff;
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 12px;
+    background: #1a3b90;
+    border-radius: 8px;
+    padding: 10px;
     opacity: 0;
     visibility: hidden;
+    transform: translateY(6px);
     transition: all 0.25s ease;
     z-index: 999;
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
+
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
 }
 
-/* 下拉选项：按钮样式 */
-.dropdown-btn {
+.dropdown-item {
     display: block;
     text-align: center;
     padding: 10px 16px;
-    border-radius: 8px;
-    color: #1a3b90;
+    border-radius: 6px;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 500;
     text-decoration: none;
-    background: rgba(26, 59, 144, 0.06);
-    transition: all 0.2s ease;
+    background: transparent;
+    transition: background 0.2s ease;
 }
-.dropdown-btn:hover {
-    background: #1a3b90;
-    color: #ffffff;
-    transform: translateY(-1px);
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
 }
 
 /* ========== 全屏开屏 Hero ========== */
@@ -140,18 +173,14 @@ body {
     margin-top: 80px;
 }
 
-/* 开屏背景图：居中铺满，不变形，完整显示核心区域 */
 .hero-bg {
     position: absolute;
     inset: 0;
-    /* 默认渐变兜底，放了图片自动生效 */
     background: linear-gradient(135deg, #0f2866 0%, #1a3b90 50%, #3b66d9 100%);
-    /* 开屏大图路径，图片放 images/hero-bg.jpg 自动生效 */
     background-image: url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    /* 轻微压暗，保证文字清晰 */
     filter: brightness(0.72);
     z-index: -1;
 }
@@ -280,12 +309,26 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* 页脚 Slogan：浅白色，柔和不刺眼 */
 .footer-slogan {
-    color: #e6edff;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.45;
+    margin-bottom: 12px;
+}
+
+.footer-slogan span {
+    color: #ffffff;
+}
+
+.footer-slogan span:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-slogan span:last-child {
     font-size: 13px;
     font-weight: 400;
-    margin-bottom: 0;
+    opacity: 0.85;
 }
 
 .footer-links h4 {
@@ -331,30 +374,14 @@ body {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    .header-slogan-text {
+        display: none;
+    }
     .nav-list {
         gap: 24px;
     }
-    .nav-link {
+    .nav-product-btn {
         font-size: 14px;
+        padding: 6px 14px;
     }
-}
-
-/* ========== Logo + Slogan 美化 ========== */
-.logo-link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-}
-
-.logo-full {
-    height: 46px;
-    width: auto;
-}
-
-.logo-slogan {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.45;
-    letter-spacing: 0.5px;
 }
