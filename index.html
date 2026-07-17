@@ -7,7 +7,39 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- 全屏开屏 Banner -->
+    <!-- 顶部导航栏（和主站视觉统一） -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="https://www.genuineknowledge.cn/" class="logo-link">
+                <img src="./images/logo-full.png" alt="真知智能" class="logo-full">
+                <div class="logo-slogan header-slogan">
+                    <span>符号连接融合</span>
+                    <span>大模型与智能体</span>
+                </div>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <!-- 产品下拉：按钮式 -->
+                    <li class="nav-item dropdown">
+                        <span class="nav-link">我们的产品</span>
+                        <div class="dropdown-menu">
+                            <a href="https://www.genuineknowledge.cn/products/?product=1" class="dropdown-btn">HaiTun Agent</a>
+                            <a href="https://www.genuineknowledge.cn/products/?product=2" class="dropdown-btn">HaiBao Data</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.genuineknowledge.cn/about/" class="nav-link">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.genuineknowledge.cn/join-us/" class="nav-link">加入我们</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 全屏开屏 Hero -->
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
@@ -63,7 +95,8 @@
             <div class="footer-brand">
                 <img src="./images/logo-full.png" alt="真知智能" class="footer-logo">
                 <div class="logo-slogan footer-slogan">
-                    符号连接融合<br>大模型与智能体
+                    <span>符号连接融合</span>
+                    <span>大模型与智能体</span>
                 </div>
             </div>
             <div class="footer-links">
