@@ -400,3 +400,42 @@ body {
     background-clip: text;
     color: transparent;
 }
+.footer-slogan {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.footer-slogan span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-slogan span:last-child {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.nav-link {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 8px;
+    color: #0f172a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.nav-link:hover {
+    background: rgba(26, 59, 144, 0.08);
+    color: #1a3b90;
+}
+/* 大标语高亮：渐变青蓝色 + 略微放大 */
+.text-highlight {
+    font-size: 1.08em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #22d3ee 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
