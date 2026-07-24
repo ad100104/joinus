@@ -425,3 +425,131 @@ body {
     background-clip: text;
     color: transparent;
 }
+/* ==================== 移动端适配（768px 及以下） ==================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    /* 导航栏 */
+    .site-header {
+        height: 64px;
+    }
+
+    .logo-full {
+        height: 36px;
+    }
+
+    .header-slogan-text {
+        display: none;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .nav-link,
+    .nav-product-btn {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        min-width: 160px;
+        padding: 8px;
+    }
+
+    .dropdown-item {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Hero 开屏 */
+    .hero {
+        margin-top: 64px;
+        height: 75vh;
+        min-height: 420px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        letter-spacing: 1px;
+        padding: 0 20px;
+    }
+
+    /* 岗位列表 */
+    .jobs-section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .job-list {
+        gap: 16px;
+    }
+
+    .job-card {
+        padding: 24px 20px;
+    }
+
+    .job-name {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .job-desc {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .job-subtitle {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .job-requirements li {
+        font-size: 15px;
+    }
+}
+
+/* ==================== 小屏手机适配（480px 及以下） ==================== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .nav-link,
+    .nav-product-btn {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .jobs-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-bottom: 32px;
+    }
+
+    .job-card {
+        padding: 20px 16px;
+        border-radius: 10px;
+    }
+
+    .job-name {
+        font-size: 18px;
+    }
+}
