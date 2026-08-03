@@ -7,9 +7,14 @@
 }
 
 body {
+    /* Keep the standalone joinus page typography identical to the main site. */
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
-    color: #111827;
+    color: #0f172a;
+    background: #ffffff;
     line-height: 1.75;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .container {
@@ -40,7 +45,7 @@ body {
 .header-left {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .logo-link {
@@ -50,32 +55,36 @@ body {
 }
 
 .logo-full {
-    height: 44px;
+    height: 48px;
     width: auto;
 }
 
 .header-slogan-text {
     display: flex;
     flex-direction: column;
-    line-height: 1.35;
+    gap: 1px;
+    line-height: 1.12;
     pointer-events: none;
     user-select: none;
 }
 
 .header-slogan-text span {
     color: #1a3b90;
-    font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
 }
 
 .header-slogan-text span:first-child {
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
 }
 
 .header-slogan-text span:last-child {
-    font-size: 12px;
-    font-weight: 500;
-    opacity: 0.85;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: #31559a;
+    opacity: 1;
 }
 
 /* 导航菜单 */
@@ -94,7 +103,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
     transition: color 0.2s ease;
 }
 .nav-link:hover {
@@ -116,7 +125,7 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
-    font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
     transition: all 0.2s ease;
     border: 1px solid transparent;
 }
