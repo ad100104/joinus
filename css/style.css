@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@500;600;700&display=swap');
 
 :root { --ink:#0f172a; --muted:#526174; --blue:#1a3b90; --bright-blue:#2354dc; --mint:#a9f5d8; --paper:#f5f7f5; --line:#d7dedb; --white:#fff; }
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--ink); background:#fff; line-height:1.75; overflow-x:hidden; font-size:16px; font-weight:400; }
+body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif; color:var(--ink); background:#fff; line-height:1.75; overflow-x:hidden; font-size:16px; font-weight:400; }
 .container { max-width:1280px; margin:0 auto; padding:0 32px; }
 
 /* Main-site header: keep structure, sizing, and destinations unchanged. */
@@ -12,8 +12,8 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 .header-left { display:flex; align-items:center; gap:10px; }
 .logo-link { display:flex; align-items:center; text-decoration:none; }
 .logo-full { height:48px; width:auto; }
-.header-slogan-text { display:flex; flex-direction:column; gap:1px; line-height:1.12; pointer-events:none; user-select:none; }
-.header-slogan-text span { color:#1a3b90; }
+.header-slogan-text { display:flex; flex-direction:column; gap:1px; line-height:1.1; user-select:none; }
+.header-slogan-text span { color:#1a3b90; font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif; }
 .header-slogan-text span:first-child { font-size:14px; font-weight:700; letter-spacing:.06em; }
 .header-slogan-text span:last-child { font-size:11px; font-weight:600; letter-spacing:.03em; color:#31559a; }
 .nav-list { display:flex; list-style:none; gap:48px; align-items:center; }
@@ -34,7 +34,8 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 .hero h1 { font-size:clamp(58px,6vw,88px); line-height:1.08; font-weight:800; letter-spacing:0; max-width:940px; }
 .hero h1 span { display:block; }
 .text-highlight { color:var(--mint); font-size:1em; font-weight:800; }
-.hero-lead { max-width:770px; margin:30px 0; color:rgba(255,255,255,.94); font-size:20px; line-height:1.75; }
+.hero-lead { max-width:980px; margin:30px 0; color:rgba(255,255,255,.96); font-size:22px; line-height:1.75; font-weight:600; }
+.hero-lead span { display:block; }
 .hero-lead strong { font-weight:700; color:#fff; }
 .button { display:inline-flex; align-items:center; gap:22px; padding:13px 19px; border-radius:6px; text-decoration:none; font-size:15px; font-weight:700; transition:.22s ease; }
 .button-light { background:#fff; color:var(--ink); }
@@ -50,13 +51,13 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 /* Identity and working principles share one viewport. */
 .culture-section { min-height:calc(100vh - 80px); padding:72px 0; background:var(--paper); display:flex; align-items:center; }
 .culture-intro { display:grid; grid-template-columns:1fr 1.1fr; gap:80px; align-items:end; margin-bottom:44px; }
-.culture-copy { color:#354457; font-size:17px; line-height:1.9; max-width:650px; }
+.culture-copy { color:#26384d; font-size:19px; line-height:1.9; font-weight:600; max-width:680px; }
 .culture-copy span { display:block; }
 .culture-grid { display:grid; grid-template-columns:1.35fr repeat(4,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
 .culture-card { min-height:238px; padding:24px 22px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); display:flex; flex-direction:column; justify-content:space-between; background:rgba(255,255,255,.62); transition:transform .24s ease,background .24s ease,box-shadow .24s ease,color .24s ease; }
 .culture-card>span { font:500 13px "DM Mono",monospace; color:var(--bright-blue); }
-.culture-card h3 { font-size:20px; font-weight:800; margin-bottom:12px; }
-.culture-card p { color:#4a596b; font-size:15px; line-height:1.7; }
+.culture-card h3 { font-size:22px; font-weight:800; margin-bottom:12px; }
+.culture-card p { color:#334155; font-size:17px; line-height:1.75; font-weight:500; }
 .culture-card:hover { transform:translateY(-10px); background:#fff; box-shadow:0 18px 36px rgba(15,23,42,.12); position:relative; z-index:2; }
 .culture-card.featured { background:var(--bright-blue); color:#fff; }
 .culture-card.featured>span { color:var(--mint); font-size:76px; font-weight:700; line-height:1; }
@@ -77,16 +78,16 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 .role-tab:hover i,.role-tab.active i { opacity:1; color:var(--bright-blue); }
 .role-detail { border:1px solid #cfd8d5; padding:42px 46px; min-height:610px; background:#fff; box-shadow:0 14px 38px rgba(15,23,42,.06); }
 .role-detail-head .eyebrow { margin-bottom:15px; font-size:13px; }
-.role-detail-head h3 { font-size:34px; line-height:1.35; font-weight:800; max-width:750px; margin-bottom:24px; }
+.role-detail-head h3 { font-size:38px; line-height:1.35; font-weight:800; max-width:750px; margin-bottom:24px; }
 .tag-row { display:flex; flex-wrap:wrap; gap:9px; }
 .tag-row span { font:500 13px "DM Mono",monospace; color:var(--bright-blue); border:1px solid #9eb4f1; padding:7px 10px; border-radius:4px; background:#f8faff; }
 .role-columns { display:grid; grid-template-columns:1fr 1fr; gap:52px; border-top:1px solid var(--line); margin-top:34px; padding-top:28px; }
 .role-columns h4 { font-size:17px; font-weight:800; margin-bottom:16px; color:var(--ink); }
 .role-columns ul { list-style:none; }
-.role-columns li { position:relative; padding-left:20px; color:#334155; font-size:16px; font-weight:500; line-height:1.75; margin-bottom:10px; }
+.role-columns li { position:relative; padding-left:20px; color:#1f3045; font-size:18px; font-weight:600; line-height:1.75; margin-bottom:12px; }
 .role-columns li::before { content:'+'; position:absolute; left:0; color:var(--bright-blue); font-weight:800; }
 .bonus-title { margin-top:28px; }
-.muted { color:#526174; font-size:16px; font-weight:500; }
+.muted { color:#405168; font-size:17px; font-weight:600; }
 .role-note { margin-top:30px; padding:13px 18px; border-left:4px solid var(--mint); background:#effaf5; color:#102e57; font-size:17px; font-weight:700; }
 .apply-strip { margin-top:54px; padding:42px 46px; background:#0d2454; color:#fff; display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; border-radius:6px; }
 .apply-strip h2 { font-size:36px; line-height:1.25; margin-bottom:12px; }
@@ -124,13 +125,14 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 }
 
 @media (max-width:768px) {
-    .header-slogan-text { display:none; }
+    .header-slogan-text { gap:0; }
+    .header-slogan-text span:first-child { font-size:11px; }
+    .header-slogan-text span:last-child { font-size:9px; }
     .nav-list { gap:24px; }
     .nav-product-btn { font-size:14px; padding:6px 14px; }
     .hero { min-height:580px; height:calc(100svh - 80px); }
     .hero h1 { font-size:40px; line-height:1.14; }
-    .hero-lead { max-width:100%; font-size:17px; line-height:1.7; overflow-wrap:anywhere; word-break:break-all; }
-    .hero-lead span { display:block; }
+    .hero-lead { max-width:100%; font-size:18px; line-height:1.7; overflow-wrap:anywhere; word-break:break-all; }
     .culture-section { min-height:0; padding:70px 0; }
     .culture-grid { grid-template-columns:1fr; }
     .culture-card.featured { grid-column:auto; }
@@ -139,9 +141,9 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
     .section-heading.compact { margin-bottom:36px; }
     .role-tab { min-width:165px; padding-right:10px; }
     .role-detail { padding:28px 22px; min-height:0; }
-    .role-detail-head h3 { font-size:27px; }
+    .role-detail-head h3 { font-size:30px; }
     .role-columns { grid-template-columns:1fr; gap:22px; }
-    .role-columns li { font-size:16px; }
+    .role-columns li { font-size:17px; }
     .apply-strip { grid-template-columns:1fr; gap:28px; padding:32px 24px; }
     .apply-actions p,.apply-actions a { font-size:14px; }
     .footer-container { grid-template-columns:1fr; gap:40px; }
@@ -149,4 +151,8 @@ body { font-family:"Microsoft YaHei","PingFang SC","Noto Sans SC",-apple-system,
 
 @media (max-width:370px) {
     .hero h1 { font-size:36px; }
+}
+
+@media (max-width:480px) {
+    .header-slogan-text { display:none; }
 }
