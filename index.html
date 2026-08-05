@@ -3,112 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>加入我们 - 真知智能</title>
+    <meta name="description" content="加入真知，与 HaiTun 一起让 AI 为用户按需赋能。">
+    <title>加入我们｜真知 GenuineKnowledge</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- 顶部导航：和主站完全一致 -->
     <header class="site-header">
         <div class="container nav-container">
-            <div class="header-left">
-                <a href="https://www.genuineknowledge.cn/" class="logo-link">
-                    <img src="./images/logo-full.png" alt="真知智能" class="logo-full">
-                </a>
-                <div class="header-slogan-text">
-                    <span>符号连接融合</span>
-                    <span>大模型与智能体</span>
-                </div>
-            </div>
-
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li class="nav-item dropdown">
-                        <a href="https://www.genuineknowledge.cn/products/?product" class="nav-product-btn">我们的产品</a>
-                        <div class="dropdown-menu">
-                            <a href="https://www.genuineknowledge.cn/products/?product=1" class="dropdown-item">HaiTun Agent</a>
-                            <a href="https://www.genuineknowledge.cn/products/?product=2" class="dropdown-item">HaiBao Data</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.genuineknowledge.cn/about/" class="nav-link">关于我们</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://www.genuineknowledge.cn/joinus/" class="nav-link">加入我们</a>
-                    </li>
-                </ul>
+            <a href="https://www.genuineknowledge.cn/" class="brand" aria-label="真知首页">
+                <img src="./images/logo-full.png" alt="真知 GenuineKnowledge" class="logo-full">
+                <span class="brand-copy"><strong>符号连接融合</strong><small>大模型与智能体</small></span>
+            </a>
+            <nav aria-label="主导航">
+                <a href="#about">我们是谁</a>
+                <a href="#roles">招聘岗位</a>
+                <a class="nav-cta" href="#apply">开始投递 <span aria-hidden="true">↗</span></a>
             </nav>
         </div>
     </header>
 
-    <!-- 全屏开屏 Hero -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">和伟大的人，做伟大的<span class="text-highlight">Agent</span></h1>
-        </div>
-    </section>
+    <main>
+        <section class="hero" id="top">
+            <div class="hero-bg" aria-hidden="true"></div>
+            <div class="hero-content container">
+                <p class="eyebrow light">GenuineKnowledge / Join the team</p>
+                <h1>和伟大的人，做伟大的<span class="text-highlight">Agent</span></h1>
+                <p class="hero-lead">真知是一家 AI Native 公司。让 AI 为用户按需赋能，是我们每天交付的结果。</p>
+                <a class="button button-light" href="#roles">查看岗位 <span aria-hidden="true">↓</span></a>
+                <p class="scroll-hint">向下探索我们的工作方式 <span aria-hidden="true">↓</span></p>
+            </div>
+        </section>
 
-    <!-- 招聘岗位列表 -->
-    <section class="jobs-section">
-        <div class="container">
-            <h2 class="section-title">热招岗位</h2>
-            <div class="job-list">
-                <div class="job-card">
-                    <h3 class="job-name">编程实习生</h3>
-                    <p class="job-desc">负责公司官网及产品前端开发，参与交互设计与性能优化，打造极致的用户体验。</p>
-                    <h4 class="job-subtitle">岗位要求</h4>
-                    <ul class="job-requirements">
-                        <li>熟练掌握 HTML/CSS/JavaScript，熟悉现代前端框架</li>
-                        <li>有良好的审美和交互理解能力</li>
-                        <li>了解 Hugo、静态站点生成器优先</li>
-                        <li>具备良好的沟通能力和团队协作精神</li>
-                    </ul>
-                    <div class="apply-box">
-                        <p>欢迎大家投递简历</p>
-                        <p><strong>HR邮箱：hr@genuineknowledge.cn</strong></p>
+        <section class="section identity" id="about">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">01 / 我们是谁</p>
+                    <h2>我们不把 AI 当工具，<br><em>而是当伙伴。</em></h2>
+                    <p>我们自研 HaiTun——真知的大脑。真知的 SOP 由 HaiTun 驱动，真知的人直接和 HaiTun 协作。我们的组织是马赛克式的：没有层级，只有角色。</p>
+                </div>
+                <div class="identity-grid">
+                    <article><span class="index">01</span><h3>HaiTun 是伙伴</h3><p>它理解上下文、记住目标、推进任务，和每一个人一起把想法变成结果。</p></article>
+                    <article><span class="index">02</span><h3>角色，而非层级</h3><p>每个人在自己负责的角色上做决定、担结果，横向协作，不等待层层审批。</p></article>
+                    <article><span class="index">03</span><h3>TPMF 独立作战</h3><p>小组围绕真实问题组队，独立核算、快速迭代，对用户可感知的成果负责。</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section principles" id="principles">
+            <div class="container">
+                <div class="section-heading compact"><p class="eyebrow">02 / 我们怎么工作</p><h2>只有数据说了算。</h2></div>
+                <div class="principle-grid">
+                    <article class="principle featured"><strong>73</strong><div><h3>原则</h3><p>70% 看客观外部成果，30% 看价值观和行动力。</p></div></article>
+                    <article class="principle"><span>02</span><div><h3>TODO 驱动</h3><p>写做成了什么、标准是什么、截止什么时候。</p></div></article>
+                    <article class="principle"><span>03</span><div><h3>先问 Agent</h3><p>HaiTun 能答的 80%，不用等人。</p></div></article>
+                    <article class="principle"><span>04</span><div><h3>打仗心态</h3><p>小步快跑，追求极致，横向对标友商。</p></div></article>
+                    <article class="principle"><span>05</span><div><h3>空杯心态</h3><p>保持空杯，持续学习，让成长成为竞争优势。</p></div></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section roles-section" id="roles">
+            <div class="container">
+                <div class="section-heading compact"><p class="eyebrow">03 / 招聘岗位</p><h2>找到你的角色，<br><em>把结果交付出来。</em></h2></div>
+                <div class="roles-workspace">
+                    <div class="role-tabs" role="tablist" aria-label="招聘岗位">
+                        <button class="role-tab active" role="tab" aria-selected="true" data-role="intern"><span>01</span><strong>实习生</strong><small>Agent 开发方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="product"><span>02</span><strong>任务负责人</strong><small>产品方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="engineering"><span>03</span><strong>模块负责人</strong><small>工程方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="sales"><span>04</span><strong>管理岗</strong><small>销售方向</small><i aria-hidden="true">↗</i></button>
                     </div>
+                    <article class="role-detail" id="role-detail" role="tabpanel" aria-live="polite"></article>
                 </div>
+            </div>
+        </section>
 
-                <div class="job-card">
-                    <h3 class="job-name">AI算法工程师</h3>
-                    <p class="job-desc">负责智能体相关算法研发，探索大模型应用与落地场景，推动产品核心能力迭代。</p>
-                    <h4 class="job-subtitle">岗位要求</h4>
-                    <ul class="job-requirements">
-                        <li>熟悉大语言模型原理与应用开发</li>
-                        <li>有 Agent、RAG 相关项目经验优先</li>
-                        <li>扎实的计算机科学与数学基础</li>
-                        <li>良好的英文文献阅读能力</li>
-                    </ul>
-                    <div class="apply-box">
-                        <p>欢迎大家投递简历</p>
-                        <p><strong>HR邮箱：hr@genuineknowledge.cn</strong></p>
-                    </div>
+        <section class="apply-section" id="apply">
+            <div class="container apply-layout">
+                <div><p class="eyebrow light">04 / 投递</p><h2>我们不看学历，<br><em>看你做成过什么。</em></h2><p>来件请附上你做过的东西：GitHub、代码、产品、客户案例，闭环的都行。</p></div>
+                <div class="apply-panel">
+                    <div class="contact-line"><span>邮件标题</span><strong>[岗位] 姓名 — 方向</strong></div>
+                    <div class="contact-line"><span>HR 邮箱</span><a href="mailto:hr@genuineknowledge.cn">hr@genuineknowledge.cn ↗</a></div>
+                    <div class="contact-line"><span>HR 罗霖</span><a href="tel:15606135997">156 0613 5997 ↗</a></div>
+                    <a class="button button-accent" href="mailto:hr@genuineknowledge.cn?subject=%5B岗位%5D%20姓名%20%E2%80%94%20方向">发送邮件 <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- 页脚：和主站完全一致 -->
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <img src="./images/logo-full.png" alt="真知智能" class="footer-logo">
-                <div class="footer-slogan">
-                    <span>符号连接融合</span>
-                    <span>大模型与智能体</span>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>导航</h4>
-                <a href="https://www.genuineknowledge.cn/">官网首页</a>
-                <a href="https://www.genuineknowledge.cn/products/">我们的产品</a>
-                <a href="https://www.genuineknowledge.cn/about/">关于我们</a>
-                <a href="https://www.genuineknowledge.cn/joinus/">加入我们（主站）</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 真知人工智能. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer class="site-footer"><div class="container footer-inner"><div><img src="./images/logo-full.png" alt="真知" class="footer-logo"><p>让 AI 为用户按需赋能。</p></div><div class="footer-links"><a href="https://www.genuineknowledge.cn/">官网首页</a><a href="https://www.genuineknowledge.cn/products/">我们的产品</a><a href="https://www.genuineknowledge.cn/about/">关于我们</a></div></div><div class="footer-bottom">© 2026 真知人工智能 · GenuineKnowledge</div></footer>
+
+    <script>
+        const roles = {
+            intern: { label: '实习生 · Agent 开发方向', intro: '跟着 mentor 从真实需求切入，挑一个方向扎进去，把想法跑成可用的 Agent。', tags: ['Python / TypeScript', 'LLM 应用', 'Agent 开发'], duties: ['参与 Router、记忆、任务管理、Action、Eval 等模块的真实迭代', '和 HaiTun 协作，快速验证方案并记录外部成果', '在 mentor 反馈下完成从需求到交付的闭环'], requirements: ['能用代码把想法跑起来（Python / TS 至少一个顺手）', '对大模型不陌生：用过、调过、知道它的边界'], bonus: ['GitHub 上有 LLM 相关 repo', '参加过 hackathon 或信息竞赛、ACM', '不靠大模型也能写代码'], note: '核心不是做得多牛，而是你自己热爱、自己动手。' },
+            product: { label: '任务负责人 · 产品方向', intro: '负责一条产品线的用户需求闭环，把用户痛点翻译成 Agent 能力。', tags: ['ToB SaaS / AI 产品', '需求闭环', '数据意识'], duties: ['找到用户真的痛，而不是你觉得的痛', '把需求拆成 TODO，推动 TPMF 小组交付', '用数据验证用户用了没有、问题解决没有'], requirements: ['2 年以上产品经验，ToB SaaS / AI 产品优先', '能用 Agent 辅助自己做产品', '极强的闭环意识：接任务 → 交付 → 主动反馈'], bonus: ['开源项目维护者', '知识图谱 / 本体工程背景'], note: '不是写 PRD，而是让用户真正用上结果。' },
+            engineering: { label: '模块负责人 · 工程方向', intro: '负责一个技术模块的设计、交付和迭代，对用户可感知的成果负责。', tags: ['全栈 / 后端', 'Agent 架构', '技术带人'], duties: ['深入架构、CI、包管理、Eval 体系中的一个方向', '倒排技术方案和排期，给出可执行的方案', '带 1-2 个任务负责人，做好 code review 与交付把关'], requirements: ['1-3 年工程经验，全栈或偏后端', '理解 ReAct Loop / Skills / MCP 等 Agent 架构', '有带人经验或明确的带人意愿'], bonus: ['开源项目维护者', '知识图谱 / 本体工程背景'], note: '不是代码写完了，而是用户用上了。' },
+            sales: { label: '管理岗 · 销售方向', intro: '把真知的 Agent 产品带到客户那里，帮客户理解 Agent 能解决什么真问题。', tags: ['ToB 销售', '商务体系', '客户代言'], duties: ['从 0 到 1 搭建商务体系和销售流程', '对接 ToB 客户，推动 POC → 签约 → 交付闭环', '把客户声音带回 TPMF 小组，做用户与真知理念的代言人'], requirements: ['3 年以上 ToB 销售 / 商务经验', '理解 Agent / AI 产品的技术边界，不做过度承诺'], bonus: [], note: '销售不是卖软件，是和客户一起解决真问题。' }
+        };
+        const detail = document.getElementById('role-detail');
+        function list(items) { return items.length ? `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>` : '<p class="muted">暂无额外加分项，欢迎带着你的成果来聊。</p>'; }
+        function renderRole(key) { const role = roles[key]; detail.innerHTML = `<div class="role-detail-head"><p class="eyebrow">${role.label}</p><h3>${role.intro}</h3><div class="tag-row">${role.tags.map(tag => `<span>${tag}</span>`).join('')}</div></div><div class="role-columns"><div><h4>你要做的事</h4>${list(role.duties)}</div><div><h4>你需要有</h4>${list(role.requirements)}<h4 class="bonus-title">加分</h4>${list(role.bonus)}</div></div><p class="role-note">“${role.note}”</p>`; }
+        document.querySelectorAll('.role-tab').forEach(tab => tab.addEventListener('click', () => { document.querySelectorAll('.role-tab').forEach(item => { item.classList.remove('active'); item.setAttribute('aria-selected', 'false'); }); tab.classList.add('active'); tab.setAttribute('aria-selected', 'true'); renderRole(tab.dataset.role); }));
+        renderRole('intern');
+    </script>
 </body>
 </html>
