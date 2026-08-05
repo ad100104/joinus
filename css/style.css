@@ -4,6 +4,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif; color:var(--ink); background:#fff; line-height:1.75; overflow-x:hidden; font-size:16px; font-weight:400; }
+main { display:flex; flex-direction:column; }
 .container { max-width:1280px; margin:0 auto; padding:0 32px; }
 
 /* Main-site header: keep structure, sizing, and destinations unchanged. */
@@ -33,7 +34,7 @@ body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans
 .hero-content { position:relative; z-index:1; width:100%; }
 .hero h1 { font-size:clamp(58px,6vw,88px); line-height:1.08; font-weight:800; letter-spacing:0; max-width:940px; }
 .hero h1 span { display:block; }
-.text-highlight { color:var(--mint); font-size:1em; font-weight:800; }
+.text-highlight { color:#5b8cff; font-size:1em; font-weight:800; }
 .hero-lead { max-width:980px; margin:30px 0; color:rgba(255,255,255,.96); font-size:22px; line-height:1.75; font-weight:600; }
 .hero-lead span { display:block; }
 .hero-lead strong { font-weight:700; color:#fff; }
@@ -49,7 +50,7 @@ body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans
 .section-heading.compact { margin-bottom:48px; }
 
 /* Identity and working principles share one viewport. */
-.culture-section { min-height:calc(100vh - 80px); padding:72px 0; background:var(--paper); display:flex; align-items:center; }
+.culture-section { order:2; min-height:calc(100vh - 80px); padding:72px 0; background:var(--paper); display:flex; align-items:center; }
 .culture-intro { display:grid; grid-template-columns:1fr 1.1fr; gap:80px; align-items:end; margin-bottom:44px; }
 .culture-copy { color:#26384d; font-size:19px; line-height:1.9; font-weight:600; max-width:680px; }
 .culture-copy span { display:block; }
@@ -65,7 +66,7 @@ body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans
 .culture-card.featured:hover { background:var(--blue); }
 
 /* Roles and application */
-.recruitment-section { padding:100px 0; background:#fff; }
+.recruitment-section { order:1; padding:100px 0; background:#fff; }
 .roles-workspace { display:grid; grid-template-columns:310px 1fr; gap:48px; align-items:start; }
 .role-tabs { display:flex; flex-direction:column; border-top:2px solid var(--ink); }
 .role-tab { width:100%; font:inherit; text-align:left; border:0; border-bottom:1px solid var(--line); background:#fff; padding:20px 12px 20px 4px; display:grid; grid-template-columns:36px 1fr 22px; column-gap:8px; cursor:pointer; color:#607084; transition:.2s ease; }
