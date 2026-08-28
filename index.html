@@ -14,22 +14,28 @@
     <header class="site-header">
         <div class="container nav-container">
             <div class="header-left">
-                <a href="https://www.genuineknowledge.cn/" class="logo-link">
+                <a href="/" class="logo-link">
                     <img src="./images/logo-full.png" alt="真知智能" class="logo-full">
                 </a>
-                <div class="header-slogan-text"><span>符号连接融合</span><span>大模型与智能体</span></div>
+                <div class="header-slogan-text"><span data-zh="符号连接融合" data-en="Connecting Symbols &amp; Intelligence">符号连接融合</span><span data-zh="大模型与智能体" data-en="LLMs &amp; Agents">大模型与智能体</span></div>
             </div>
             <nav class="main-nav" aria-label="主导航">
                 <ul class="nav-list">
                     <li class="nav-item dropdown">
-                        <a href="https://www.genuineknowledge.cn/products/?product" class="nav-product-btn">我们的产品</a>
+                        <a href="/products/?product" class="nav-product-btn" data-zh="我们的产品" data-en="Products">我们的产品</a>
                         <div class="dropdown-menu">
-                            <a href="https://www.genuineknowledge.cn/products/?product=1" class="dropdown-item">HaiTun Agent</a>
-                            <a href="https://www.genuineknowledge.cn/products/?product=2" class="dropdown-item">HaiBao Data</a>
+                            <a href="/products/?product=1" class="dropdown-item">HaiTun Agent</a>
+                            <a href="/products/?product=2" class="dropdown-item">NL2SQL</a>
+                        <a href="/products/?product=3" class="dropdown-item" data-zh="本体（Ontology）" data-en="Ontology">本体（Ontology）</a>
+                        <a href="/products/?product=4" class="dropdown-item" data-zh="企业级 HaiTun Agent" data-en="Enterprise HaiTun Agent">企业级 HaiTun Agent</a>
+                        <a href="/products/?product=5" class="dropdown-item" data-zh="本体增强的插件集" data-en="Ontology-Enhanced Plugin Suite">本体增强的插件集</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="https://www.genuineknowledge.cn/about/" class="nav-link">关于我们</a></li>
-                    <li class="nav-item"><a href="https://www.genuineknowledge.cn/joinus/" class="nav-link">加入我们</a></li>
+                    <li class="nav-item"><a href="/about/" class="nav-link" data-zh="关于我们" data-en="About Us">关于我们</a></li>
+                    <li class="nav-item"><a href="/joinus/" class="nav-link" data-zh="加入我们" data-en="Join Us">加入我们</a></li>
+                    <li class="nav-item">
+                        <button class="lang-toggle" aria-label="切换语言"><span>中</span> / <span>En</span></button>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -39,30 +45,30 @@
         <section class="hero" id="top">
             <div class="hero-bg" aria-hidden="true"></div>
             <div class="hero-content container">
-                <h1><span>和伟大的人</span><span>做伟大的<strong class="text-highlight">Agent</strong></span></h1>
-                <p class="hero-lead"><span>真知是一家 AI Native 公司。</span><span>让 AI 为用户按需赋能，打造靠谱的自进化大模型与Agent。</span></p>
-                <a class="button button-light" href="#roles">查看岗位 <span aria-hidden="true">↓</span></a>
+                <h1><span data-zh="和伟大的人" data-en="Work with great people">和伟大的人</span><span data-zh="做伟大的" data-en="Build great ">做伟大的</span><strong class="text-highlight">Agent</strong></h1>
+                <p class="hero-lead"><span data-zh="真知是一家 AI Native 公司。" data-en="Genuine Knowledge is an AI-native company.">真知是一家 AI Native 公司。</span><span data-zh="让 AI 为用户按需赋能，打造靠谱的自进化大模型与Agent。" data-en="Empowering AI on demand, building reliable self-evolving LLMs and Agents.">让 AI 为用户按需赋能，打造靠谱的自进化大模型与Agent。</span></p>
+                <a class="button button-light" href="#roles"><span data-zh="查看岗位" data-en="View Openings">查看岗位</span> <span aria-hidden="true">↓</span></a>
             </div>
         </section>
 
         <section class="recruitment-section" id="roles">
             <div class="container">
-                <div class="section-heading compact"><h2>找到你的角色，<br><em>把结果交付出来。</em></h2></div>
+                <div class="section-heading compact"><h2><span data-zh="找到你的角色，" data-en="Find your role, ">找到你的角色，</span><br><em data-zh="把结果交付出来。" data-en="and deliver results.">把结果交付出来。</em></h2></div>
                 <div class="roles-workspace">
                     <div class="role-tabs" role="tablist" aria-label="招聘岗位">
-                        <button class="role-tab active" role="tab" aria-selected="true" data-role="intern"><span>01</span><strong>实习生</strong><small>Agent 开发方向</small><i aria-hidden="true">↗</i></button>
-                        <button class="role-tab" role="tab" aria-selected="false" data-role="product"><span>02</span><strong>任务负责人</strong><small>产品方向</small><i aria-hidden="true">↗</i></button>
-                        <button class="role-tab" role="tab" aria-selected="false" data-role="engineering"><span>03</span><strong>模块负责人</strong><small>工程方向</small><i aria-hidden="true">↗</i></button>
-                        <button class="role-tab" role="tab" aria-selected="false" data-role="sales"><span>04</span><strong>管理岗</strong><small>销售方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab active" role="tab" aria-selected="true" data-role="intern"><span>01</span><strong data-zh="实习生" data-en="Intern">实习生</strong><small data-zh="Agent 开发方向" data-en="Agent Development">Agent 开发方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="product"><span>02</span><strong data-zh="任务负责人" data-en="Task Owner">任务负责人</strong><small data-zh="产品方向" data-en="Product">产品方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="engineering"><span>03</span><strong data-zh="模块负责人" data-en="Module Owner">模块负责人</strong><small data-zh="工程方向" data-en="Engineering">工程方向</small><i aria-hidden="true">↗</i></button>
+                        <button class="role-tab" role="tab" aria-selected="false" data-role="sales"><span>04</span><strong data-zh="管理岗" data-en="Management">管理岗</strong><small data-zh="销售方向" data-en="Sales">销售方向</small><i aria-hidden="true">↗</i></button>
                     </div>
                     <article class="role-detail" id="role-detail" role="tabpanel" aria-live="polite"></article>
                 </div>
                 <div class="apply-strip" id="apply">
-                    <div><h2>不看学历，看成果。</h2><p>请附上 GitHub、代码、产品或客户案例。薪酬具体数字面议，面试中坦诚沟通。</p></div>
+                    <div><h2 data-zh="不看学历，看成果。" data-en="No degree requirements — results matter.">不看学历，看成果。</h2><p data-zh="请附上 GitHub、代码、产品或客户案例。薪酬具体数字面议，面试中坦诚沟通。" data-en="Please include GitHub, code, product, or customer case examples. Compensation is discussed openly in interviews.">请附上 GitHub、代码、产品或客户案例。薪酬具体数字面议，面试中坦诚沟通。</p></div>
                     <div class="apply-actions">
-                        <p><span>邮件标题</span><strong>[岗位] 姓名 — 方向</strong></p>
+                        <p><span data-zh="邮件标题" data-en="Email Subject">邮件标题</span><strong data-zh="[岗位] 姓名 — 方向" data-en="[Position] Name — Track">[岗位] 姓名 — 方向</strong></p>
                         <a href="mailto:hr@genuineknowledge.cn?subject=%5B岗位%5D%20姓名%20%E2%80%94%20方向">hr@genuineknowledge.cn <span aria-hidden="true">↗</span></a>
-                        <a href="tel:15606135997">HR 罗霖 · 156 0613 5997 <span aria-hidden="true">↗</span></a>
+                        <a href="tel:15606135997"><span data-zh="HR 罗霖 · 156 0613 5997" data-en="HR Luo Lin · 156 0613 5997">HR 罗霖 · 156 0613 5997</span> <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
             </div>
@@ -71,15 +77,15 @@
         <section class="culture-section" id="about">
             <div class="container">
                 <div class="culture-intro">
-                    <div class="section-heading"><h2>AI 是伙伴，<br><em>结果是语言。</em></h2></div>
-                    <p class="culture-copy"><span>我们自研 HaiTun——真知的大脑，它不是一个工具，是伙伴。</span><span>真知的 SOP 由 HaiTun 驱动，真知的人直接和 HaiTun 协作。</span><span>我们的组织是马赛克式的：没有层级，只有角色。</span><span>TPMF 小组独立作战、独立核算。</span></p>
+                    <div class="section-heading"><h2><span data-zh="AI 是伙伴，" data-en="AI is a partner, ">AI 是伙伴，</span><br><em data-zh="结果是语言。" data-en="results are the language.">结果是语言。</em></h2></div>
+                    <p class="culture-copy"><span data-zh="我们自研 HaiTun——真知的大脑，它不是一个工具，是伙伴。" data-en="We build HaiTun — the brain of Genuine Knowledge. It's not a tool; it's a partner.">我们自研 HaiTun——真知的大脑，它不是一个工具，是伙伴。</span><span data-zh="真知的 SOP 由 HaiTun 驱动，真知的人直接和 HaiTun 协作。" data-en="Genuine Knowledge's SOPs are driven by HaiTun, and our people collaborate with HaiTun directly.">真知的 SOP 由 HaiTun 驱动，真知的人直接和 HaiTun 协作。</span><span data-zh="我们的组织是马赛克式的：没有层级，只有角色。" data-en="Our organization is mosaic-style: no hierarchy, only roles.">我们的组织是马赛克式的：没有层级，只有角色。</span><span data-zh="TPMF 小组独立作战、独立核算。" data-en="TPMF teams operate independently and run their own numbers.">TPMF 小组独立作战、独立核算。</span></p>
                 </div>
                 <div class="culture-grid">
-                    <article class="culture-card featured"><span>73</span><div><h3>原则</h3><p>70% 看客观外部成果，30% 看价值观和行动力。只有数据说了算。</p></div></article>
-                    <article class="culture-card"><div><h3>TODO 驱动</h3><p>不写在做什么，写做成了什么、标准是什么、截止什么时候。</p></div></article>
-                    <article class="culture-card"><div><h3>先问 Agent</h3><p>HaiTun 能答的 80%，不用等人。</p></div></article>
-                    <article class="culture-card"><div><h3>打仗心态</h3><p>小步快跑，追求极致，横向对标友商。</p></div></article>
-                    <article class="culture-card"><div><h3>空杯心态</h3><p>成长速度是核心竞争优势，保持空杯，持续学习。</p></div></article>
+                    <article class="culture-card featured"><span>73</span><div><h3 data-zh="原则" data-en="The 73 Principle">原则</h3><p data-zh="70% 看客观外部成果，30% 看价值观和行动力。只有数据说了算。" data-en="70% objective external results, 30% values and drive. Only data has the final say.">70% 看客观外部成果，30% 看价值观和行动力。只有数据说了算。</p></div></article>
+                    <article class="culture-card"><div><h3 data-zh="TODO 驱动" data-en="TODO-Driven">TODO 驱动</h3><p data-zh="不写在做什么，写做成了什么、标准是什么、截止什么时候。" data-en="Don't write what you're doing; write what you accomplished, the standard, and the deadline.">不写在做什么，写做成了什么、标准是什么、截止什么时候。</p></div></article>
+                    <article class="culture-card"><div><h3 data-zh="先问 Agent" data-en="Ask Agent First">先问 Agent</h3><p data-zh="HaiTun 能答的 80%，不用等人。" data-en="If HaiTun can answer 80% of it, don't wait for people.">HaiTun 能答的 80%，不用等人。</p></div></article>
+                    <article class="culture-card"><div><h3 data-zh="打仗心态" data-en="Fighting Spirit">打仗心态</h3><p data-zh="小步快跑，追求极致，横向对标友商。" data-en="Move fast in small steps, pursue excellence, benchmark against competitors.">小步快跑，追求极致，横向对标友商。</p></div></article>
+                    <article class="culture-card"><div><h3 data-zh="空杯心态" data-en="Open Mind">空杯心态</h3><p data-zh="成长速度是核心竞争优势，保持空杯，持续学习。" data-en="Growth speed is our core edge — stay humble and keep learning.">成长速度是核心竞争优势，保持空杯，持续学习。</p></div></article>
                 </div>
             </div>
         </section>
@@ -88,9 +94,9 @@
     <footer class="site-footer">
         <div class="container footer-container">
             <div class="footer-brand"><img src="./images/logo-full.png" alt="真知智能" class="footer-logo"><div class="footer-slogan"><span>符号连接融合</span><span>大模型与智能体</span></div></div>
-            <div class="footer-links"><h4>导航</h4><a href="https://www.genuineknowledge.cn/">官网首页</a><a href="https://www.genuineknowledge.cn/products/">我们的产品</a><a href="https://www.genuineknowledge.cn/about/">关于我们</a><a href="https://www.genuineknowledge.cn/joinus/">加入我们</a></div>
+            <div class="footer-links"><h4 data-zh="导航" data-en="Navigation">导航</h4><a href="/" data-zh="官网首页" data-en="Home">官网首页</a><a href="/products/" data-zh="我们的产品" data-en="Products">我们的产品</a><a href="/about/" data-zh="关于我们" data-en="About Us">关于我们</a><a href="/joinus/" data-zh="加入我们" data-en="Join Us">加入我们</a></div>
         </div>
-        <div class="footer-bottom"><p>© 2026 真知人工智能. All rights reserved.</p></div>
+        <div class="footer-bottom"><p data-zh="© 2026 真知人工智能. All rights reserved." data-en="© 2026 Genuine Knowledge AI. All rights reserved.">© 2026 真知人工智能. All rights reserved.</p></div>
     </footer>
 
     <script>
@@ -100,11 +106,38 @@
             engineering: { label: '模块负责人 · 工程方向', intro: '负责一个技术模块的设计、交付和迭代，对用户可感知的成果负责。', tags: ['全栈 / 后端', 'Agent 架构', '技术带人'], duties: ['深入架构、CI、包管理、Eval 体系中的一个方向', '倒排技术方案和排期，给出可执行的方案', '带 1-2 个任务负责人，做好 code review 与交付把关'], requirements: ['1-3 年工程经验，全栈或偏后端', '理解 ReAct Loop / Skills / MCP 等 Agent 架构', '有带人经验或明确的带人意愿'], bonus: ['开源项目维护者', '知识图谱 / 本体工程背景'], note: '不是代码写完了，而是用户用上了。' },
             sales: { label: '管理岗 · 销售方向', intro: '把真知的 Agent 产品带到客户那里，帮客户理解 Agent 能解决什么真问题。', tags: ['ToB 销售', '商务体系', '客户代言'], duties: ['从 0 到 1 搭建商务体系和销售流程', '对接 ToB 客户，推动 POC → 签约 → 交付闭环', '把客户声音带回 TPMF 小组，做用户与真知理念的代言人'], requirements: ['3 年以上 ToB 销售 / 商务经验', '理解 Agent / AI 产品的技术边界，不做过度承诺'], bonus: [], note: '销售不是卖软件，是和客户一起解决真问题。' }
         };
-        const detail = document.getElementById('role-detail');
-        function list(items) { return items.length ? `<ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>` : '<p class="muted">暂无额外加分项，欢迎带着你的成果来聊。</p>'; }
-        function renderRole(key) { const role = roles[key]; detail.innerHTML = `<div class="role-detail-head"><p class="eyebrow">${role.label}</p><h3>${role.intro}</h3><div class="tag-row">${role.tags.map(tag => `<span>${tag}</span>`).join('')}</div></div><div class="role-columns"><div><h4>你要做的事</h4>${list(role.duties)}</div><div><h4>你需要有</h4>${list(role.requirements)}<h4 class="bonus-title">加分</h4>${list(role.bonus)}</div></div><p class="role-note">“${role.note}”</p>`; }
-        document.querySelectorAll('.role-tab').forEach(tab => tab.addEventListener('click', () => { document.querySelectorAll('.role-tab').forEach(item => { item.classList.remove('active'); item.setAttribute('aria-selected', 'false'); }); tab.classList.add('active'); tab.setAttribute('aria-selected', 'true'); renderRole(tab.dataset.role); }));
-        renderRole('intern');
+        const rolesEn = {
+        intern: { label: 'Intern · Agent Development', intro: 'Start from real needs with your mentor, pick a direction to dig into, and turn your idea into a working Agent.', tags: ['Python / TypeScript', 'LLM Applications', 'Agent Development'], duties: ['Work on real iterations of Router, memory, task management, Action, and Eval modules', 'Collaborate with HaiTun to quickly validate solutions and record external results', 'Complete the loop from requirement to delivery with mentor feedback'], requirements: ['Can turn ideas into working code (Python / TS, at least one)', 'Familiar with LLMs: used them, tuned them, know their boundaries'], bonus: ['LLM-related repos on GitHub', 'Participated in hackathons, informatics contests, or ACM', 'Can write code without relying on LLMs'], note: 'The point isnt how impressive you are - its that you love it and do it yourself.' },
+        product: { label: 'Task Owner · Product', intro: 'Own the user-need loop for a product line, translating customer pain points into Agent capabilities.', tags: ['ToB SaaS / AI Products', 'Requirement Loop', 'Data Awareness'], duties: ['Find the pain users really have, not the one you think they have', 'Break requirements into TODOs and drive TPMF team delivery', 'Use data to verify whether users actually used it and whether the problem is solved'], requirements: ['2+ years of product experience, ToB SaaS / AI products preferred', 'Can use Agents to assist your own product work', 'Strong closure mindset: take task, deliver, follow up proactively'], bonus: ['Open-source maintainer', 'Knowledge graph / ontology background'], note: 'Its not about writing PRDs - its about users actually getting results.' },
+        engineering: { label: 'Module Owner · Engineering', intro: 'Own the design, delivery, and iteration of a technical module, accountable for user-visible results.', tags: ['Full-stack / Backend', 'Agent Architecture', 'Technical Leadership'], duties: ['Go deep into one area: architecture, CI, packaging, or the Eval system', 'Plan technical solutions and timelines with actionable deliverables', 'Lead 1-2 task owners, own code review and delivery quality'], requirements: ['1-3 years of engineering experience, full-stack or backend', 'Understand Agent architectures such as ReAct Loop / Skills / MCP', 'Has leadership experience or clear willingness to lead'], bonus: ['Open-source maintainer', 'Knowledge graph / ontology background'], note: 'Its not about the code being done - its about users actually using it.' },
+        sales: { label: 'Management · Sales', intro: 'Bring Genuine Knowledges Agent products to customers and help them understand what real problems Agents can solve.', tags: ['ToB Sales', 'Business Systems', 'Customer Advocacy'], duties: ['Build the business system and sales process from 0 to 1', 'Engage ToB customers, drive the POC to contract to delivery loop', 'Bring customer voices back to TPMF teams as the advocate of users and Genuine Knowledge'], requirements: ['3+ years of ToB sales / business experience', 'Understand the technical boundaries of Agent / AI products; dont over-promise'], bonus: [], note: 'Sales isnt selling software - its solving real problems with customers.' }
+    };
+    const detail = document.getElementById('role-detail');
+    let currentLang = 'zh';
+    let currentRole = 'intern';
+    const uiDict = { zh: {todo:'你要做的事',need:'你需要有',bonus:'加分',empty:'暂无额外加分项，欢迎带着你的成果来聊。'}, en: {todo:'What You Will Do',need:'What You Need',bonus:'Bonus',empty:'No extra bonus items - bring your results and lets talk.'} };
+    function ui(key) { return uiDict[currentLang][key]; }
+    function pick(key, field) { var r = currentLang === 'zh' ? roles[key] : (rolesEn[key] || roles[key]); return r[field]; }
+    function list(items) { return items.length ? '<ul>' + items.map(function(item){ return '<li>'+item+'</li>'; }).join('') + '</ul>' : '<p class="muted">'+ui('empty')+'</p>'; }
+    function renderRole(key) { currentRole = key; detail.innerHTML = '<div class="role-detail-head"><p class="eyebrow">'+pick(key,'label')+'</p><h3>'+pick(key,'intro')+'</h3><div class="tag-row">'+pick(key,'tags').map(function(tag){return '<span>'+tag+'</span>';}).join('')+'</div></div><div class="role-columns"><div><h4>'+ui('todo')+'</h4>'+list(pick(key,'duties'))+'</div><div><h4>'+ui('need')+'</h4>'+list(pick(key,'requirements'))+'<h4 class="bonus-title">'+ui('bonus')+'</h4>'+list(pick(key,'bonus'))+'</div></div><p class="role-note">"'+pick(key,'note')+'"</p>'; }
+    // ========== i18n ==========
+    var savedLang = localStorage.getItem('gk-site-lang');
+    var manualLang = localStorage.getItem('gk-site-lang-manual');
+    function switchLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-zh]').forEach(function(el){ el.textContent = lang === 'zh' ? el.dataset.zh : el.dataset.en; });
+      localStorage.setItem('gk-site-lang', lang);
+      renderRole(currentRole);
+    }
+    var initialLang;
+    if (savedLang && manualLang) { initialLang = savedLang; }
+    else { var navLang = (navigator.language || (navigator.languages && navigator.languages[0]) || 'zh').toLowerCase(); initialLang = navLang.indexOf('zh') === 0 ? 'zh' : 'en'; }
+    switchLang(initialLang);
+
+    document.querySelectorAll('.lang-toggle').forEach(function(btn){ btn.addEventListener('click', function(){ var cur = document.documentElement.lang.indexOf('zh') === 0 ? 'zh' : 'en'; localStorage.setItem('gk-site-lang-manual','1'); switchLang(cur === 'zh' ? 'en' : 'zh'); }); });
+
+    document.querySelectorAll('.role-tab').forEach(function(tab){ tab.addEventListener('click', function(){ document.querySelectorAll('.role-tab').forEach(function(item){ item.classList.remove('active'); item.setAttribute('aria-selected','false'); }); tab.classList.add('active'); tab.setAttribute('aria-selected','true'); renderRole(tab.dataset.role); }); });
     </script>
 </body>
 </html>
