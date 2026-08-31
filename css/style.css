@@ -157,3 +157,27 @@ body { font-family:"Noto Sans SC","Microsoft YaHei","PingFang SC","Hiragino Sans
 @media (max-width:480px) {
     .header-slogan-text { display:none; }
 }
+
+/* 语言切换按钮（与主站一致） */
+.lang-toggle {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  width: auto;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  line-height: 1;
+}
+.lang-toggle:hover {
+  border-color: #3b98e9;
+  color: #3b98e9;
+}
